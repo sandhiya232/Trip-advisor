@@ -1,0 +1,492 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family:"Gabarito",sans-serif;
+}
+
+
+.navbar{
+    padding:20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items:center;
+    /* position:sticky; */
+    top:0;
+    margin-left: 8%;
+    
+
+}
+.navbar__s1 img{
+    width: 250px
+}
+
+.navbar__s3{
+    flex-grow: 1;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    margin-right: 15%;
+    text-align: center;
+}
+.navbar__s3 p{
+    font-size: 20px;
+}
+
+.navbar__s4{
+  display: none;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 25px;  /* Increased padding for a better look */
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;  /* Makes the button oval */
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    
+}
+
+button:hover {
+    background-color: #333; /* Darker shade on hover */
+}
+
+i{
+    background-color: transparent;
+    color: black;
+    padding: 10px 25px;  /* Increased padding for a better look */
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;  /* Makes the button oval */
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+
+}
+i:hover{
+    background-color: #c9c2c2;
+}
+.header__h1{
+    padding: 30px;
+    text-align: center;
+    font-size: xx-large;
+}
+.options {
+    display: flex;
+    gap: 10px; 
+    justify-content: center;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.options p {
+    position: relative;
+    padding-bottom: 5px;
+    font-weight:  x-large;
+}
+
+.options p:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background-color: black;
+}
+.serach-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; 
+}
+
+.serach-bar{
+    padding: 15px;
+    border: solid rgb(184, 181, 181) 1px;
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    background-color: transparent;
+    
+}
+.serach-bar input{
+    border: none;
+    font-size: 15px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.serach-bar input:focus{
+    outline: none;
+}
+
+.serach-btn{
+    background-color:#34e0a1;
+    color: black;
+    padding: 10px 34px;  
+    border: none;
+    cursor: pointer;
+    border-radius: 50px; 
+    font-size: 19px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.banner-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; 
+}
+.banner-image img{
+    width: 90%;
+    height: 50%;
+
+}
+.recommended {
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; 
+  }
+  
+  .recommended__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .recommended__container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .course_card {
+    position: relative;
+    min-width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 20%;
+  }
+  
+  .course_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+    color: white;
+  }
+  
+  .card-overlay h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+  }
+ .recommended-2{
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; 
+ }
+
+  .recommended__container__2 {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .course_card__product-card {
+    position: relative;
+    min-width: 250px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 20%;
+  }
+  
+  .course_card__product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .wishlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .wishlist-icon i {
+    font-size: 16px;
+    color: black;
+  }
+  
+  .wishlist-icon:hover i {
+    color: red;
+  }
+  
+  .card-body {
+    padding: 10px 12px;
+  }
+  
+  .card-body h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+  
+  .rating {
+    font-size: 13px;
+    color: #222;
+    margin-bottom: 6px;
+  }
+  
+  .green-dots {
+    color: #00AA6C;
+    margin-left: 4px;
+  }
+  
+  .price {
+    font-size: 13px;
+    color: #333;
+  }
+  .explore-cart{
+    background-color:rgb(202, 200, 200);
+    padding: 30px;
+    margin-top: 40px;
+    font-family: 'Gabarito', sans-serif;
+    
+  }
+  .explore__recommended__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  .explore-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+  }
+
+  .recommended__container__explore {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  .explore__course_card {
+    position: relative;
+    min-width: 250px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color:rgb(202, 200, 200);
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 20%;
+  }
+  .explore__course_card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .caption {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    padding: 0 10px;
+    line-height: 1.4;
+  }
+
+  .footer {
+    padding: 30px;
+    background-color:rgb(202, 200, 200);
+    color: #000;
+  }
+  
+  .footer__top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .footer__column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer__column h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer__column p,
+  .footer__column a {
+    margin: 5px 0;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footer__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .footer__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer__left img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .footer__links a {
+    text-decoration: underline;
+    color: black;
+  }
+  
+  .footer__selects {
+    display: flex;
+    gap: 10px;
+    align-items: center; 
+    flex-wrap: wrap; 
+   
+  }
+  
+  .footer__selects select {
+    padding: 5px;
+    font-size: 14px;
+    height: 40px;         
+    vertical-align: middle;
+  }
+  
+  .fafa-icon{
+    width: 20px;
+    display: flex;
+    margin-left: 50%;
+    flex-basis: 20%;
+  }
+
+  .rentals-section {
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .rentals-text {
+    max-width: 250px;
+  }
+  
+  .rentals-text h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+
+  .rentals-cards {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .rental-card {
+    position: relative;
+    min-width: 250px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color:white;
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 20%;
+  }
+  
+  .rental-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  
+  .rental-card h4 {
+    font-size: 16px;
+    margin: 10px;
+    margin-bottom: 0;
+  }
+  
+  .rental-card p {
+    font-size: 20px;
+    color: #555;
+    margin: 0 10px 10px 10px;
+  }
+
+  @media screen and (max-width:800px){
+    body{
+        font-size: 10px;
+    }
+
+}
+  
